@@ -96,7 +96,7 @@ class WPMOZO_Instagram extends Widget_Base {
 		
 		public function get_style_depends() {
 
-			wp_register_style( 'wpmozo-instagram-feed-style', plugins_url( 'style.min.css', __FILE__ ) );
+			wp_register_style( 'wpmozo-instagram-feed-style', plugins_url( 'assets/css/style.min.css', __FILE__ ) );
 			return array( 'wpmozo-instagram-feed-style' );
 		}
 		
@@ -105,18 +105,18 @@ class WPMOZO_Instagram extends Widget_Base {
 		 *
 		 * Retrieve the list of script dependencies the element requires.
 		 *
-		 * @since 1.3.0
+		 * @since 1.0.0
 		 * @access public
 		 *
 		 * @return array Element scripts dependencies.
 		 */
 	    
 	    public function get_script_depends() {
-			wp_register_script( 'wpmozo-instagram-feed-script', plugins_url( 'instagram_feed_custom_script.min.js', __FILE__ ), array( 'jquery' ), WPMOZO_WIDGETS_FOR_ELEMENTOR_VERSION, false );
+			wp_register_script( 'wpmozo-instagram-feed-script', plugins_url( 'assets/js/instagram_feed_custom_script.min.js', __FILE__ ), array( 'jquery' ), WPMOZO_INSTAGRAM_FOR_ELEMENTOR_VERSION, false );
 			
-			wp_register_script( 'isotope-script', plugins_url( 'isotope.pkgd.min.js', __FILE__ ), array( 'jquery' , 'imagesloaded' ), WPMOZO_WIDGETS_FOR_ELEMENTOR_VERSION, true );
+			wp_register_script( 'isotope-script', plugins_url( 'assets/js/isotope.pkgd.min.js', __FILE__ ), array( 'jquery' , 'imagesloaded' ), WPMOZO_INSTAGRAM_FOR_ELEMENTOR_VERSION, true );
 			
-			wp_register_script( 'images-loaded-script', plugins_url( 'imagesloaded.pkgd.min.js', __FILE__ ), array( 'jquery' ), WPMOZO_WIDGETS_FOR_ELEMENTOR_VERSION, false );
+			wp_register_script( 'images-loaded-script', plugins_url( 'assets/js/imagesloaded.pkgd.min.js', __FILE__ ), array( 'jquery' ), WPMOZO_INSTAGRAM_FOR_ELEMENTOR_VERSION, false );
 			
 			return array( 'images-loaded-script', 'isotope-script', 'wpmozo-instagram-feed-script'  );	
 		}
