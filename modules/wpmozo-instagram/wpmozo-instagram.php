@@ -175,7 +175,7 @@ class WPMOZO_Instagram extends Widget_Base {
 
 			$this->add_control( 'image_count',
 				array(
-					'label'   => esc_html__( 'Number Of Images', 'wpmozo-widgets-for-elementor' ),
+					'label'   => esc_html__( 'Number of Posts', 'wpmozo-widgets-for-elementor' ),
 					'type'    => \Elementor\Controls_Manager::NUMBER,
 					'min'     => 1,
 					'max'     => 200,
@@ -186,7 +186,7 @@ class WPMOZO_Instagram extends Widget_Base {
 
 			$this->add_control( 'link_image',
 				array(
-					'label'        => esc_html__( 'Link Image To Instagram', 'wpmozo-widgets-for-elementor' ),
+					'label'        => esc_html__( 'Link Post to Instagram', 'wpmozo-widgets-for-elementor' ),
 					'type'         => Controls_Manager::SWITCHER,
 					'label_off'    => esc_html__( 'NO', 'wpmozo-widgets-for-elementor' ),
 					'label_on'     => esc_html__( 'YES', 'wpmozo-widgets-for-elementor' ),
@@ -352,6 +352,8 @@ class WPMOZO_Instagram extends Widget_Base {
 					'label_block'   => false,
 					'type'          => Controls_Manager::SELECT,
 					'options'       => array(
+						2   => esc_html__( '2', 'wpmozo-widgets-for-elementor' ),
+						3   => esc_html__( '3', 'wpmozo-widgets-for-elementor' ),
 						4   => esc_html__( '4', 'wpmozo-widgets-for-elementor' ),
 						5   => esc_html__( '5', 'wpmozo-widgets-for-elementor' ),
 						6   => esc_html__( '6', 'wpmozo-widgets-for-elementor' ),
@@ -524,7 +526,7 @@ class WPMOZO_Instagram extends Widget_Base {
 
 			$this->add_control( 'caption_text_alignment',
 				array(
-					'label'         => esc_html__( 'caption Alignment', 'wpmozo-widgets-for-elementor' ),
+					'label'         => esc_html__( 'Caption Alignment', 'wpmozo-widgets-for-elementor' ),
 					'type'          => Controls_Manager::CHOOSE,
 					'label_block'   => true,
 					'options'       => array(
@@ -608,9 +610,9 @@ class WPMOZO_Instagram extends Widget_Base {
 			$this->end_controls_section();
 
 			//Image styling
-			$this->start_controls_section( 'image_styling_section',
+			$this->start_controls_section( 'post_styling_section',
 				array(
-					'label' => esc_html__( 'Image', 'wpmozo-widgets-for-elementor' ),
+					'label' => esc_html__( 'Post', 'wpmozo-widgets-for-elementor' ),
 					'tab'   => Controls_Manager::TAB_STYLE,
 				)
 			);
@@ -621,7 +623,7 @@ class WPMOZO_Instagram extends Widget_Base {
 					'type'        => Controls_Manager::DIMENSIONS,
 					'label_block' => true,
 					'size_units'  => array( 'px', 'em', '%' ),
-					'default'	  =>array( 'top'=>16, 'right'=>16, 'bottom'=>16, 'left'=>16 ),
+					'default'	  =>array( 'top'=>5, 'right'=>5, 'bottom'=>5, 'left'=>5 ),
 					'selectors'   => array(
 						'{{WRAPPER}} .wpmozo_instagram_image_inner_wrap .wpmozo_instagram_item' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
@@ -631,8 +633,13 @@ class WPMOZO_Instagram extends Widget_Base {
 			$this->add_group_control(
 				Group_Control_Border::get_type(),
 				array(
-					'name'      => 'image_border',
+					'name'      => 'post_border',
 					'selector'  => '{{WRAPPER}} .wpmozo_instagram_image_inner_wrap .wpmozo_instagram_item',
+					'fields_options' => array(
+						'color' => array(
+							'default' => '#000000'
+						)
+					),
 					'separator' => 'before',
 				)
 			);
@@ -640,7 +647,7 @@ class WPMOZO_Instagram extends Widget_Base {
 			$this->add_group_control(
 				Group_Control_Box_Shadow::get_type(),
 				array(
-					'name'           => 'image_box_shadow',
+					'name'           => 'post_box_shadow',
 					'selector'       => '{{WRAPPER}} .wpmozo_instagram_image_inner_wrap .wpmozo_instagram_item',
 					'fields_options' => array(
 						'box_shadow_type' => array( 
@@ -796,6 +803,18 @@ class WPMOZO_Instagram extends Widget_Base {
 				)
 			);
 
+			$this->add_responsive_control( 'button_padding_normal_state',
+				array(
+					'label'      => esc_html__( 'Padding', 'wpmozo-widgets-for-elementor' ),
+					'type'       => Controls_Manager::DIMENSIONS,
+					'size_units' => array( 'px', 'em', '%' ),
+					'default'    => array( 'top'=>3,'right'=>3,'bottom'=>3,'left'=>3 ),
+					'selectors'  => array(
+						'{{WRAPPER}} .wpmozo_instagram_button_wrapper_inner' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					),
+				)
+			);
+
 			$this->end_controls_tab();
 
 			// Tab 2
@@ -907,9 +926,21 @@ class WPMOZO_Instagram extends Widget_Base {
 						'unit' => 'ms',
 					),
 					'selectors' => array(
-						'{{WRAPPER}} .wpmozo_instagram_button_wrapper_inner, {{WRAPPER}} .wpmozo_instagram_button_wrapper_inner .wpmozo_instagram_button' => 'transition: color {{SIZE}}{{UNIT}}, border {{SIZE}}{{UNIT}}, background {{SIZE}}{{UNIT}}, text-shadow {{SIZE}}{{UNIT}}, border-radius {{SIZE}}{{UNIT}}, transform {{SIZE}}{{UNIT}}, font {{SIZE}}{{UNIT}}, size {{SIZE}}{{UNIT}}, letter-spacing {{SIZE}}{{UNIT}}, word-spacing {{SIZE}}{{UNIT}}, margin 300ms; animation-duration:{{SIZE}}{{UNIT}}; transition-timing-function: linear;',
+						'{{WRAPPER}} .wpmozo_instagram_button_wrapper_inner, {{WRAPPER}} .wpmozo_instagram_button_wrapper_inner .wpmozo_instagram_button' => 'transition: color {{SIZE}}{{UNIT}}, border {{SIZE}}{{UNIT}}, background {{SIZE}}{{UNIT}}, text-shadow {{SIZE}}{{UNIT}}, border-radius {{SIZE}}{{UNIT}}, transform {{SIZE}}{{UNIT}}, font {{SIZE}}{{UNIT}}, size {{SIZE}}{{UNIT}}, padding {{SIZE}}{{UNIT}}, letter-spacing {{SIZE}}{{UNIT}}, word-spacing {{SIZE}}{{UNIT}}, margin 300ms; animation-duration:{{SIZE}}{{UNIT}}; transition-timing-function: linear;',
 						
 						'{{WRAPPER}} .wpmozo_instagram_button_wrapper_inner svg' => 'transition: color {{SIZE}}{{UNIT}}, fill {{SIZE}}{{UNIT}}, text-shadow {{SIZE}}{{UNIT}}, transform {{SIZE}}{{UNIT}}, height {{SIZE}}{{UNIT}}, width {{SIZE}}{{UNIT}}, opacity 300ms; animation-duration:{{SIZE}}{{UNIT}}; transition-timing-function: linear;'
+					),
+				)
+			);
+
+			$this->add_responsive_control( 'button_padding_hover_state',
+				array(
+					'label'      => esc_html__( 'Padding', 'wpmozo-widgets-for-elementor' ),
+					'type'       => Controls_Manager::DIMENSIONS,
+					'size_units' => array( 'px', 'em', '%' ),
+					'default'    => array( 'top'=>3,'right'=>3,'bottom'=>3,'left'=>3 ),
+					'selectors'  => array(
+						'{{WRAPPER}} .wpmozo_instagram_button_wrapper_inner:hover' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -946,44 +977,39 @@ class WPMOZO_Instagram extends Widget_Base {
 			);
 
 			//Button padding and margin section
-			$this->add_control( 'button_padding_margin_heading',
+			/*$this->add_control( 'button_padding_margin_heading',
 				array(
 					'label' => esc_html__( 'Padding and Margin', 'wpmozo-widgets-for-elementor' ),
 					'type'  => Controls_Manager::HEADING,
 				)
 			);
 
-			$this->start_controls_tabs( 'button_padding_margin_control_tabs'
-			);
+			$this->start_controls_tabs( 'button_padding_margin_control_tabs',
+				array(
+
+				)
+			)*/;
 
 			// Tab 1
-			$this->start_controls_tab( 'button_padding_tab',
+			/*$this->start_controls_tab( 'button_padding_tab',
 				array(
 					'label' => esc_html__( 'Padding', 'wpmozo-widgets-for-elementor' ),
 				)
-			);
+			);*/
 
 			// Settings for first tab.
-			$this->add_responsive_control( 'button_padding',
-				array(
-					'label'      => esc_html__( 'Padding', 'wpmozo-widgets-for-elementor' ),
-					'type'       => Controls_Manager::DIMENSIONS,
-					'size_units' => array( 'px', 'em', '%' ),
-					'default'    => array( 'top'=>3,'right'=>3,'bottom'=>3,'left'=>3 ),
-					'selectors'  => array(
-						'{{WRAPPER}} .wpmozo_instagram_button_wrapper_inner' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					),
-				)
-			);
+			
 
-			$this->end_controls_tab();
+			
+
+			// $this->end_controls_tab();
 
 			// Tab 2
-			$this->start_controls_tab( 'button_margin_tab',
+			/*$this->start_controls_tab( 'button_margin_tab',
 				array(
 					'label' => esc_html__( 'Margin', 'wpmozo-widgets-for-elementor' ),
 				)
-			);
+			);*/
 
 			// Settings for second tab.
 			$this->add_responsive_control( 'button_margin',
@@ -998,9 +1024,9 @@ class WPMOZO_Instagram extends Widget_Base {
 				)
 			);
 
-			$this->end_controls_tab();
+			/*$this->end_controls_tab();
 
-			$this->end_controls_tabs();
+			$this->end_controls_tabs();*/
 
 			$this->end_controls_section();
 		}
@@ -1014,7 +1040,7 @@ class WPMOZO_Instagram extends Widget_Base {
 				$request_args = array(
 					'timeout' => 20,
 				);
-				$instagram_feed = wp_remote_retrieve_body( wp_remote_get( 'https://graph.instagram.com/me/media?fields=media_url,caption,id,media_type,thumbnail_url,timestamp,username,permalink&limit=' . $limit . '&access_token=' . $instagram_token, $request_args ) );
+				$instagram_feed = wp_remote_retrieve_body( wp_remote_get( 'https://graph.instagram.com/me/media?fields=id,media_url,caption,media_type,thumbnail_url,timestamp,username,permalink&limit=' . $limit . '&access_token=' . $instagram_token, $request_args ) );
 				$instagram_feed_data = json_decode( $instagram_feed, true );
 				$instagram_feed_data['limit'] = $limit;
 
@@ -1087,14 +1113,18 @@ class WPMOZO_Instagram extends Widget_Base {
 	        	$button_url = 'https://www.instagram.com/' . $instagram_feed_data[ 'data' ][ 0 ][ 'username' ] . '/';
 
 				if ( '' !== $button_url  ) {
-					$this->add_link_attributes( 'button_text', array( 'url' => $button_url, 'is_external' => true, 'nofollow' => true ) );
+					$this->add_link_attributes( 'wpmozo_instagram_button_wrapper_inner', array( 'url' => $button_url, 'is_external' => true, 'nofollow' => true ) );
 				}
 
 				foreach( array_slice( $instagram_feed_data[ 'data' ], 0, $image_count ) as $data) {
-					$permalink 	= $data[ 'permalink' ];
-					$media_type = $data[ 'media_type' ];
-					$media_url  = ( 'VIDEO' === $media_type ) ? $data[ 'thumbnail_url' ] : $data[ 'media_url' ];
-					$username   = $data[ 'username' ];
+					$permalink 	= isset( $data[ 'permalink' ] ) ? $data[ 'permalink' ] : '' ;
+					$media_type = isset( $data[ 'media_type' ] ) ? $data[ 'media_type' ] : '' ;
+					$media_url  = ( 'VIDEO' === $media_type ) ? $data[ 'thumbnail_url' ] : ( isset( $data[ 'media_url' ] ) ? $data[ 'media_url' ] : '' );
+					$username   = isset( $data[ 'username' ] ) ? $data[ 'username' ] : '' ;
+
+					if ( '' === $media_url ) {
+						continue;
+					}
 
 					//Instagram caption					
 					if ( array_key_exists( 'caption', $data) && 'yes' === $display_caption ) {
@@ -1149,19 +1179,18 @@ class WPMOZO_Instagram extends Widget_Base {
             //Instagram button icon
 
 			if ( '' !== $settings[ 'button_icon' ]) {
-		        $button_icon =	Icons_Manager::try_get_icon_html( $settings[ 'button_icon' ], [ 'aria-hidden' => 'true','class'=>'wpmozo_instagram_button_icon '  ] );
+		        $button_icon =	Icons_Manager::try_get_icon_html( $settings[ 'button_icon' ], [ 'aria-hidden' => 'true', 'class'=>'wpmozo_instagram_button_icon ' ] );
         	}
 
-            //Instagram button
-					
+            //Instagram button	
 			if ( $button_text && 'after' === $settings[ 'button_icon_position' ] ) {
                 $button_text = sprintf( '
                 	<div %1$s>
-                		<div %2$s>
-                            <a %3$s>
+                		<a %2$s>
+                            <div %3$s>
                             	%4$s
-                            </a>%5$s
-                        </div>
+                            </div>%5$s
+                        </a>
                     </div>',
                     $this->get_render_attribute_string( 'wpmozo_instagram_button_wrapper' ), 
                     $this->get_render_attribute_string( 'wpmozo_instagram_button_wrapper_inner' ), 
@@ -1171,12 +1200,12 @@ class WPMOZO_Instagram extends Widget_Base {
             } elseif ( $button_text && 'before' === $settings[ 'button_icon_position' ] ) {
             	$button_text = sprintf( '
                 	<div %1$s>
-                		<div %2$s>
+                		<a %2$s>
                           %3$s
-                          <a %4$s>
+                          <div %4$s>
                           	%5$s
-                          </a> 
-                        </div>
+                          </div> 
+                        </a>
                     </div>',
                     $this->get_render_attribute_string( 'wpmozo_instagram_button_wrapper' ),
                     $this->get_render_attribute_string( 'wpmozo_instagram_button_wrapper_inner' ),
@@ -1187,12 +1216,12 @@ class WPMOZO_Instagram extends Widget_Base {
             } elseif ($button_text) {
             	$button_text = sprintf( '
                 	<div %1$s>
-                		<div %2$s>
+                		<a %2$s>
                           %3$s
-                          <a %4$s>
+                          <div %4$s>
                           	%5$s
-                          </a> 
-                        </div>
+                          </div> 
+                        </a>
                     </div>',
                     $this->get_render_attribute_string( 'wpmozo_instagram_button_wrapper' ),
                     $this->get_render_attribute_string( 'wpmozo_instagram_button_wrapper_inner' ),
