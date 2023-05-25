@@ -216,7 +216,7 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 
 		$message = sprintf(
 			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'wpmozo-instagram-for-elementor' ),
-			'<strong>' . esc_html__( 'WPMozo Masonry Gallery For Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'WPMozo Instagram For Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>'
 		);
 
@@ -241,7 +241,7 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 
 		$message = sprintf(
 			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'wpmozo-instagram-for-elementor' ),
-			'<strong>' . esc_html__( 'WPMozo Masonry Gallery For Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'WPMozo Instagram For Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
@@ -267,7 +267,7 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 
 		$message = sprintf(
 			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'wpmozo-instagram-for-elementor' ),
-			'<strong>' . esc_html__( 'WPMozo Masonry Gallery For Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'WPMozo Instagram For Elementor', 'wpmozo-instagram-for-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'PHP', 'wpmozo-instagram-for-elementor' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
@@ -533,7 +533,7 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 			return $reply;
 		}
 
-		$error_message = '<em>To update plugins, authenticate your license by entering the License Key in the License Tab of plugin settings. You could find the License Key in your WPMozo account. Check our website for more information. Double-check License Key for errors if issues arise.</em>';
+		$error_message = '<em>To update WPMozo Instagram, authenticate your license by entering the License Key in the License Tab of plugin settings. You could find the License Key in your WPMozo account. Check our website for more information. Double-check License Key for errors if issues arise.</em>';
 		// output custom error message for WPMozo Products if package is empty
 
 		return new WP_Error( 'no_package', $error_message );
@@ -607,7 +607,7 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 			return;
 		}
 
-		$message = '</p><p>To receive updates for WPMozo products, authenticate your subscription via the License tab in your plugin settings. Ensure that your License Key is entered correctly to enable updates.';
+		$message = '</p><p>To receive updates for WPMozo Instagram, authenticate your subscription via the License tab in your plugin settings. Ensure that your License Key is entered correctly to enable updates.';
 		echo $message;
 	}
 
