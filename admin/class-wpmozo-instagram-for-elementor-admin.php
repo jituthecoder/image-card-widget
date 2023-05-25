@@ -136,6 +136,24 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 	private $settings;
 
 	/**
+     * Settings Class Object.
+     *
+     * @since 	 1.0.0
+     * @access   private
+     * @var 	 Object
+     */
+	private $minimum_elementor_version = '5.6';
+
+	/**
+     * Settings Class Object.
+     *
+     * @since 	 1.0.0
+     * @access   private
+     * @var 	 Object
+     */
+	private $minimum_php_version = '2.0';
+
+	/**
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
@@ -169,16 +187,16 @@ class WPMOZO_Instagram_For_Elementor_Admin {
         }
 
         // Check for required Elementor version
-   //     if ( ! version_compare( ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=' ) ) {
-     //       add_action( 'admin_notices', [ $this, 'admin_notice_minimum_elementor_version' ] );
-        //    return;
-       // }
+        if ( ! version_compare( ELEMENTOR_VERSION, $minimum_elementor_version, '>=' ) ) {
+            add_action( 'admin_notices', [ $this, 'admin_notice_minimum_elementor_version' ] );
+            return;
+        }
 
         // Check for required PHP version
-        //if ( version_compare( PHP_VERSION, self::MINIMUM_PHP_VERSION, '<' ) ) {
-          //  add_action( 'admin_notices', [ $this, 'admin_notice_minimum_php_version' ] );
-            //return;
-        //}
+        if ( version_compare( PHP_VERSION, $minimum_php_version, '<' ) ) {
+            add_action( 'admin_notices', [ $this, 'admin_notice_minimum_php_version' ] );
+            return;
+        }
 	}
 
 	/**
@@ -258,7 +276,7 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 	 * @since    1.0.0
 	 */
 	public function admin_menu() {
-		$this->hook_suffix = add_menu_page( $this->page_title, $this->menu_title, 'manage_options', $this->menu_slug,  array( $this, 'plugin_settings' ), 'dashicons-layout', 85 );
+		$this->hook_suffix = add_menu_page( $this->page_title, $this->menu_title, 'manage_options', $this->menu_slug,  array( $this, 'plugin_settings' ), 'dashicons-instagram', 85 );
 	}
 	
 	/**

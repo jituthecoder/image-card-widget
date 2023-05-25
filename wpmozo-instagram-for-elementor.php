@@ -12,9 +12,9 @@
  * Text Domain: wpmozo-instagram-for-elementor
  * Domain Path: /languages
  * Requires at least:   5.3
- * Tested up to:        5.9.3
- * Elementor tested up to: 3.6.2
- * Elementor Pro tested up to: 3.6.4
+ * Tested up to:        6.2.2
+ * Elementor tested up to: 3.12.2
+ * Elementor Pro tested up to: 3.7.7
 */
 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
