@@ -1,28 +1,28 @@
 .wp-admin #wpcontent {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 .wpmozo_panel_wrapper {
-    box-sizing: border-box;
-    background: #fff;
-    border-radius: 6px;
-    width: calc(100% - 70px);
-    float: left;
-    margin: 30px 40px 0px 30px;
-    color: #545454;
+	box-sizing: border-box;
+	background: #fff;
+	border-radius: 6px;
+	width: calc(100% - 70px);
+	float: left;
+	margin: 30px 40px 0px 30px;
+	color: #545454;
 }
 
 .wpmozo_panel_wrapper .wpmozo_panel_licensefield .wpmozo_panel_textfield[disabled] {
-    opacity: .7;
+	opacity: .7;
 }
 
 .wpmozo_panel_wrapper * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .wpmozo_panel_wrapper a {
-    text-decoration: none;
-    outline: 0;
+	text-decoration: none;
+	outline: 0;
 }
 
 .wpmozo_panel_wrapper a,
@@ -33,13 +33,13 @@
 .wpmozo_panel_wrapper input:focus,
 .wpmozo_panel_wrapper input[type=checkbox]:focus,
 .wpmozo_panel_wrapper input[type=radio]:focus {
-    box-shadow: none;
-    margin: 0;
-    outline: 0;
+	box-shadow: none;
+	margin: 0;
+	outline: 0;
 }
 
 .wpmozo_panel_wrapper input::placeholder {
-    color: #bdbdbd;
+	color: #bdbdbd;
 }
 
 .wpmozo_panel_wrapper input[type=checkbox]:focus,
@@ -47,7 +47,7 @@
 .wpmozo_panel_wrapper input:focus,
 .wpmozo_panel_wrapper select:focus,
 .wpmozo_panel_wrapper textarea:focus {
-    border-color: #3dda85;
+	border-color: #3dda85;
 }
 
 .wpmozo_panel_wrapper input[type=checkbox],
@@ -55,62 +55,62 @@
 .wpmozo_panel_wrapper input,
 .wpmozo_panel_wrapper select,
 .wpmozo_panel_wrapper textarea {
-    background: #fafafa;
-    color: #545454;
+	background: #fafafa;
+	color: #545454;
 }
 
 .wpmozo_panel_wrapper input[readonly],
 .wpmozo_panel_wrapper textarea[readonly],
 .wpmozo_panel_wrapper select[readonly] {
-    opacity: 0.6;
+	opacity: 0.6;
 }
 
 .wpmozo_panel_wrapper input[type=text],
 .wpmozo_panel_wrapper textarea,
 .wpmozo_panel_wrapper select {
-    border-radius: 30px;
-    padding: 8px 16px;
-    font-size: 14px;
-    line-height: 1.5;
+	border-radius: 30px;
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 1.5;
 }
 
 #wpbody .wpmozo_panel_wrapper select {
-    min-width: 200px;
-    height: auto;
-    padding-right: 36px;
-    font-size: 14px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+	min-width: 200px;
+	height: auto;
+	padding-right: 36px;
+	font-size: 14px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .wpmozo_panel_wrapper .wpmozo_panel_button {
-    display: inline-block;
-    background: #65db87;
-    border-radius: 30px;
-    min-width: 120px;
-    padding: 12px 20px;
-    line-height: 1;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    transition: all 300ms ease;
+	display: inline-block;
+	background: #65db87;
+	border-radius: 30px;
+	min-width: 120px;
+	padding: 12px 20px;
+	line-height: 1;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 
 .wpmozo_panel_wrapper ol,
 .wpmozo_panel_wrapper ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .wpmozo_panel_wrapper li,
 .wpmozo_panel_wrapper li {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .wpmozo_panel_wrapper h1,
@@ -119,291 +119,291 @@
 .wpmozo_panel_wrapper h4,
 .wpmozo_panel_wrapper h5,
 .wpmozo_panel_wrapper h6 {
-    margin: 0;
-    padding: 0;
-    color: #545454;
+	margin: 0;
+	padding: 0;
+	color: #545454;
 }
 
 .wpmozo_panel_header {
-    display: table;
-    width: 100%;
-    padding: 20px 30px;
-    -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+	display: table;
+	width: 100%;
+	padding: 20px 30px;
+	-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
 .wpmozo_panel_logo {
-    display: table-cell;
-    width: 40px;
-    padding-right: 10px;
-    vertical-align: middle;
-    line-height: 0;
+	display: table-cell;
+	width: 40px;
+	padding-right: 10px;
+	vertical-align: middle;
+	line-height: 0;
 }
 
 .wpmozo_panel_logo img {
-    max-width: 100%;
-    border-radius: 50%;
+	max-width: 100%;
+	border-radius: 50%;
 }
 
 .wpmozo_panel_title {
-    display: table-cell;
-    width: 35%;
-    vertical-align: middle;
-    font-size: 18px;
-    font-weight: 500;
+	display: table-cell;
+	width: 35%;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 500;
 }
 
 .wpmozo_panel_menu {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
 }
 
 .wpmozo_panel_menu li {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #bdbdbd;
-    cursor: pointer;
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #bdbdbd;
+	cursor: pointer;
 }
 
 .wpmozo_panel_menu li.wpmozo_panel_active_menu_item {
-    color: #545454;
-    cursor: default;
+	color: #545454;
+	cursor: default;
 }
 
 .wpmozo_panel_section_wrapper {
-    position: relative;
-    width: 100%;
-    float: left;
-    padding: 50px 30px;
+	position: relative;
+	width: 100%;
+	float: left;
+	padding: 50px 30px;
 }
 
 .wpmozo_panel_section {
-    display: none;
-    position: relative;
-    width: 100%;
-    float: left;
-    z-index: 1;
+	display: none;
+	position: relative;
+	width: 100%;
+	float: left;
+	z-index: 1;
 }
 
 .wpmozo_panel_section.wpmozo_panel_active_section {
-    display: block;
+	display: block;
 }
 
 
 .wpmozo_panel_field {
-    width: 100%;
-    float: left;
-    padding: 20px 0;
+	width: 100%;
+	float: left;
+	padding: 20px 0;
 }
 
 .wpmozo_panel_field:first-child {
-    padding-top: 0;
+	padding-top: 0;
 }
 
 .wpmozo_panel_field:not(:last-child) {
-    border-bottom: 1px solid #f3f3f3;
+	border-bottom: 1px solid #f3f3f3;
 }
 
 .wpmozo_panel_field .wpmozo_panel_label_control {
-    width: 100%;
-    float: left;
+	width: 100%;
+	float: left;
 }
 
 .wpmozo_panel_field .wpmozo_panel_field_control {
-    position: relative;
-    width: 100%;
-    float: left;
-    padding-bottom: 5px;
+	position: relative;
+	width: 100%;
+	float: left;
+	padding-bottom: 5px;
 }
 
 .wpmozo_panel_settings_info {
-    display: block;
-    font-size: 14px;
-    font-style: italic;
-    color: #c1c1c1;
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	color: #c1c1c1;
 }
 
 .wpmozo_panel_label_control label {
-    font-size: 16px;
-    font-weight: 500;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 .wpmozo_panel_field .wpmozo_panel_textfield {
-    width: 100%;
-    max-width: 400px;
+	width: 100%;
+	max-width: 400px;
 }
 
 
 /* License Page */
 .wpmozo_panel_wrapper .wpmozo_panel_licensefield .wpmozo_panel_textfield {
-    display: block;
-    margin-bottom: 25px;
-    padding: 12px 20px;
+	display: block;
+	margin-bottom: 25px;
+	padding: 12px 20px;
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_textfield:focus {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_button {
-    -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    min-width: 150px;
-    padding: 15px 30px;
-    font-size: 16px;
-    letter-spacing: 1px;
+	-webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+	min-width: 150px;
+	padding: 15px 30px;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_button:last-of-type {
-    margin-left: 20px;
+	margin-left: 20px;
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_button_deactivate {
-    background: #545454;
+	background: #545454;
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_button_activate:not(.disabled):hover {
-    -webkit-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    -moz-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    -ms-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    /*
-    -webkit-box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
-    -moz-box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
-    -ms-box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
-    box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
-    */
+	-webkit-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	-moz-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	-ms-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	/*
+	-webkit-box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
+	-moz-box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
+	-ms-box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
+	box-shadow: 0px 8px 20px rgba(101, 219, 135, 0.4);
+	*/
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_button_deactivate:not(.disabled):hover {
-    -webkit-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    -moz-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    -ms-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
-    box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	-webkit-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	-moz-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	-ms-box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
+	box-shadow: 0px 8px 20px rgba(84, 84, 84, 0.4);
 }
 
 .wpmozo_panel_licensefield .wpmozo_panel_button.disabled {
-    opacity: 0.2;
-    cursor: not-allowed;
+	opacity: 0.2;
+	cursor: not-allowed;
 }
 
 .wpmozo_panel_license_response {
-    display: block;
-    margin-top: 25px;
-    font-size: 14px;
-    font-style: italic;
+	display: block;
+	margin-top: 25px;
+	font-size: 14px;
+	font-style: italic;
 }
 
 .wpmozo_panel_license_response.error {
-    color: #ec1c1c;
+	color: #ec1c1c;
 }
 
-.wpmozo_panel_license_response.success { 
-    color: #00a42e;
+.wpmozo_panel_license_response.success {
+	color: #00a42e;
 }
 
 
 
 
 @media screen and (min-width: 768px ) {
-    .wpmozo_panel_field .wpmozo_panel_label_control {
-        width: 25%;
-    }
+	.wpmozo_panel_field .wpmozo_panel_label_control {
+		width: 25%;
+	}
 
-    .wpmozo_panel_field .wpmozo_panel_label_control + .wpmozo_panel_field_control {
-        width: 75%;
-        padding: 0 0 5px 30px;
-    }
+	.wpmozo_panel_field .wpmozo_panel_label_control + .wpmozo_panel_field_control {
+		width: 75%;
+		padding: 0 0 5px 30px;
+	}
 
-    .wpmozo_panel_settings_info {
-        margin-left: calc(25% + 30px);
-    }
+	.wpmozo_panel_settings_info {
+		margin-left: calc(25% + 30px);
+	}
 
-    .wpmozo_panel_fieldset .wpmozo_panel_label_control {
-        width: 100%;
-    }
+	.wpmozo_panel_fieldset .wpmozo_panel_label_control {
+		width: 100%;
+	}
 
-    .wpmozo_panel_fieldset .wpmozo_panel_label_control + .wpmozo_panel_field_control,
-    .wpmozo_panel_fieldset .wpmozo_panel_field_control {
-        width: 100%;
-        padding: 5px 0;
-    }
+	.wpmozo_panel_fieldset .wpmozo_panel_label_control + .wpmozo_panel_field_control,
+	.wpmozo_panel_fieldset .wpmozo_panel_field_control {
+		width: 100%;
+		padding: 5px 0;
+	}
 
-    .wpmozo_panel_fieldset .wpmozo_panel_settings_info {
-       margin-left: 0;
-    }
+	.wpmozo_panel_fieldset .wpmozo_panel_settings_info {
+	   margin-left: 0;
+	}
 }
 
 @media screen and (min-width: 1200px ) {
-    .wpmozo_panel_fields_cols_3 .wpmozo_panel_field {
-        width: 30%;
-    }
+	.wpmozo_panel_fields_cols_3 .wpmozo_panel_field {
+		width: 30%;
+	}
 
-    .wpmozo_panel_fields_cols_3 .wpmozo_panel_field:nth-of-type(2n+2) {
-        margin-right: 5%;
-    }
+	.wpmozo_panel_fields_cols_3 .wpmozo_panel_field:nth-of-type(2n+2) {
+		margin-right: 5%;
+	}
 
-    .wpmozo_panel_fields_cols_3 .wpmozo_panel_field:nth-of-type(3n+3) {
-        margin-right: 0;
-    }
+	.wpmozo_panel_fields_cols_3 .wpmozo_panel_field:nth-of-type(3n+3) {
+		margin-right: 0;
+	}
 
-    .wpmozo_panel_clearfix:after {
-        display: block;
-        visibility: hidden;
-        height: 0;
-        clear: both;
-        content: '';
-    }
+	.wpmozo_panel_clearfix:after {
+		display: block;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		content: '';
+	}
 }
 
 @media screen and (max-width: 1023px) {
-    .wpmozo_panel_header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+	.wpmozo_panel_header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 
-    .wpmozo_panel_title {
-        width: calc(100% - 40px);
-    }
+	.wpmozo_panel_title {
+		width: calc(100% - 40px);
+	}
 
-    .wpmozo_panel_wrapper .wpmozo_panel_menu {
-        width: 100%;
-        margin-top: 20px;
-        text-align: left;
-    }
+	.wpmozo_panel_wrapper .wpmozo_panel_menu {
+		width: 100%;
+		margin-top: 20px;
+		text-align: left;
+	}
 
-    .wpmozo_panel_menu li {
-        margin-left: 0;
-        margin-right: 20px;
-    }
+	.wpmozo_panel_menu li {
+		margin-left: 0;
+		margin-right: 20px;
+	}
 }
 
 @media screen and (max-width: 767px) {
-    .wpmozo_panel_wrapper input[type=text],
-    .wpmozo_panel_wrapper textarea,
-    .wpmozo_panel_wrapper select {
-        padding: 6px 16px;
-    }
+	.wpmozo_panel_wrapper input[type=text],
+	.wpmozo_panel_wrapper textarea,
+	.wpmozo_panel_wrapper select {
+		padding: 6px 16px;
+	}
 
-    .wpmozo_panel_field .wpmozo_panel_label_control {
-        margin-bottom: 10px;
-    }
+	.wpmozo_panel_field .wpmozo_panel_label_control {
+		margin-bottom: 10px;
+	}
 
-    .wpmozo_panel_fieldset .wpmozo_panel_settings_info {
-        margin-left: 0;
-    }
+	.wpmozo_panel_fieldset .wpmozo_panel_settings_info {
+		margin-left: 0;
+	}
 
-    .wpmozo_panel_fieldset .wpmozo_panel_label_control {
-        margin-bottom: 0;
-    }
+	.wpmozo_panel_fieldset .wpmozo_panel_label_control {
+		margin-bottom: 0;
+	}
 
-    .wpmozo_panel_fieldset label {
-        font-size: 14px;
-    }
+	.wpmozo_panel_fieldset label {
+		font-size: 14px;
+	}
 }

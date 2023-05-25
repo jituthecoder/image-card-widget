@@ -10,6 +10,6 @@
 ?>
 <div id="wpmozo_panel_license_section" class="wpmozo_panel_section wpmozo_panel_active_section">
 	<?php
-		include_once plugin_dir_path( __FILE__ ) . 'settings/license.php';
+		require_once plugin_dir_path( __FILE__ ) . 'settings/license.php';
 	?>
 </div>

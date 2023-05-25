@@ -8,7 +8,7 @@
  * @since      1.0.0
  * @author     Elicus <hello@elicus.com>
  */
-class WPMOZO_Instagram_For_Elementor_i18n {
+class WPMOZO_Instagram_For_Elementor_I18n {
 
 	/**
 	 * Load the plugin text domain for translation.

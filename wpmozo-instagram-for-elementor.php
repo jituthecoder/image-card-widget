@@ -15,9 +15,9 @@
  * Tested up to:        6.2.2
  * Elementor tested up to: 3.12.2
  * Elementor Pro tested up to: 3.7.7
-*/
+ */
 
-defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+defined( 'ABSPATH' ) || die( 'No script kiddies please!' );
 
 define( 'WPMOZO_INSTAGRAM_FOR_ELEMENTOR_SLUG', 'wpmozo-instagram-for-elementor' );
 define( 'WPMOZO_INSTAGRAM_FOR_ELEMENTOR_VERSION', '1.0.0' );
@@ -30,8 +30,8 @@ require_once WPMOZO_INSTAGRAM_FOR_ELEMENTOR_DIR_PATH . 'includes/class-wpmozo-in
 
 function wpmozo_instagram_for_elementor() {
 
-    $plugin = new WPMOZO_Instagram_For_Elementor();
-    $plugin->run();
+	$plugin = new WPMOZO_Instagram_For_Elementor();
+	$plugin->run();
 
 }
 wpmozo_instagram_for_elementor();
