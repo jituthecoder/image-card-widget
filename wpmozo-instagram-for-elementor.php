@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WPMozo Instagram For Elementor
  * Plugin URI:  https://wpmozo.com
- * Description: Display Instagram Feeds on your website easily.
+ * Description: With WPMozo's Instagram Feed plugin for Elementor, you can seamlessly integrate your Instagram posts onto your website, maximizing your online presence.
  * Version:     1.0.0
  * Author:      Elicus
  * Author URI:  https://elicus.com/
