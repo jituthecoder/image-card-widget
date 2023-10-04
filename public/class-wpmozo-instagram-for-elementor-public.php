@@ -24,8 +24,28 @@ class WPMOZO_Instagram_For_Elementor_Public {
 
     public function register_oembed_widget( $widgets_manager ) {
 
-        require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-instagram/wpmozo-instagram.php' );
-        $widgets_manager->register(new \WPMOZO_Instagram());
+       // require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-instagram/wpmozo-instagram.php' );
+        require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-test.php' );
+        require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-textarea.php' );
+
+        require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-widgets.php' );
+
+        require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-image-card.php' );
+
+        //$widgets_manager->register(new \WPMOZO_Instagram());
+        $widgets_manager->register(new \WPMOZO_Test());
+        $widgets_manager->register(new \WPMOZO_Textarea());
+        $widgets_manager->register(new \WPMOZO_Button());
+        $widgets_manager->register(new \WPMOZO_Checkbox());
+        $widgets_manager->register(new \WPMOZO_Banner_Title());
+        $widgets_manager->register(new \WPMOZO_Image_Card());
+
+
+        
+
+        
+
+        
 
     }
 

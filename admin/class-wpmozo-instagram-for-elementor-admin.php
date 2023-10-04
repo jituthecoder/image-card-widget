@@ -187,16 +187,16 @@ class WPMOZO_Instagram_For_Elementor_Admin {
 		}
 
 		// Check for required Elementor version
-		if ( ! version_compare( ELEMENTOR_VERSION, $minimum_elementor_version, '>=' ) ) {
-			add_action( 'admin_notices', array( $this, 'admin_notice_minimum_elementor_version' ) );
-			return;
-		}
+		// if ( ! version_compare( ELEMENTOR_VERSION, $minimum_elementor_version, '>=' ) ) {
+		// 	add_action( 'admin_notices', array( $this, 'admin_notice_minimum_elementor_version' ) );
+		// 	return;
+		// }
 
-		// Check for required PHP version
-		if ( version_compare( PHP_VERSION, $minimum_php_version, '<' ) ) {
-			add_action( 'admin_notices', array( $this, 'admin_notice_minimum_php_version' ) );
-			return;
-		}
+		// // Check for required PHP version
+		// if ( version_compare( PHP_VERSION, $minimum_php_version, '<' ) ) {
+		// 	add_action( 'admin_notices', array( $this, 'admin_notice_minimum_php_version' ) );
+		// 	return;
+		// }
 	}
 
 	/**
