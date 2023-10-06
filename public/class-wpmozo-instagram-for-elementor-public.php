@@ -27,10 +27,10 @@ class WPMOZO_Instagram_For_Elementor_Public {
        // require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-instagram/wpmozo-instagram.php' );
         require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-test.php' );
         require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-textarea.php' );
-
         require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-widgets.php' );
-
         require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-image-card.php' );
+        require_once( plugin_dir_path( __DIR__ )  . '/modules/wpmozo-test/wpmozo-content-toggle.php' );
+        
 
         //$widgets_manager->register(new \WPMOZO_Instagram());
         $widgets_manager->register(new \WPMOZO_Test());
@@ -39,6 +39,8 @@ class WPMOZO_Instagram_For_Elementor_Public {
         $widgets_manager->register(new \WPMOZO_Checkbox());
         $widgets_manager->register(new \WPMOZO_Banner_Title());
         $widgets_manager->register(new \WPMOZO_Image_Card());
+        $widgets_manager->register(new \WPMOZO_Content_Toggle());
+
 
 
         
